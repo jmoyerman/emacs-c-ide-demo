@@ -157,3 +157,7 @@
 
 ;; Package zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+
+;; Load some personal touches
+(add-to-list 'load-path "~/.emacs.d/personal")
+(load "personal.el")
