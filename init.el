@@ -88,6 +88,7 @@
 ;; “user”: When you want to define your own style
 (setq
  c-default-style "linux" ;; set style to "linux"
+ c-basic-offset 2
  )
 
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
@@ -102,7 +103,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 4 spaces
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 
 ;; Compilation
 (global-set-key (kbd "<f5>") (lambda ()
@@ -160,4 +161,24 @@
 
 ;; Load some personal touches
 (add-to-list 'load-path "~/.emacs.d/personal")
+(add-to-list 'load-path "~/.emacs.d/elpa/ecb-20140215.114");
 (load "personal.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-layout-window-sizes
+   (quote
+    (("left8"
+      (ecb-directories-buffer-name 0.215311004784689 . 0.2777777777777778)
+      (ecb-sources-buffer-name 0.215311004784689 . 0.24074074074074073)
+      (ecb-methods-buffer-name 0.215311004784689 . 0.2777777777777778)
+      (ecb-history-buffer-name 0.215311004784689 . 0.16666666666666666)))))
+ '(ecb-options-version "2.40"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
