@@ -22,6 +22,9 @@
 
 (require 'ecb)
 (ecb-activate)
+(setq ecb-tip-of-the-day nil) ; Ugly tooltip
+
+
 
 (setq sp-autoescape-string-quote nil)
 
