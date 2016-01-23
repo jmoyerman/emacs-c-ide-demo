@@ -20,9 +20,9 @@
  (setq whitespace-style '(face empty lines-tail trailing))
  (global-whitespace-mode t)
 
+(setq ecb-tip-of-the-day nil) ; Ugly tooltip
 (require 'ecb)
 (ecb-activate)
-(setq ecb-tip-of-the-day nil) ; Ugly tooltip
 
 
 
